@@ -4,7 +4,6 @@ import axios from 'axios';
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import Card from "react-bootstrap/esm/Card";
-import data from './movies.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore,{ Navigation, Pagination, Scrollbar, A11y,Autoplay } from 'swiper';
 import 'swiper/swiper.scss';

@@ -8,7 +8,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
-import data from './movies.json';
 
 import SwiperCore, {
   Navigation,Pagination,Autoplay
@@ -28,7 +27,7 @@ export default function MoreLikeThis(props) {
         }
 }, []);
   return (
-    <div style={{margin:"10px 20px",marginTop:"2%",color:"black"}}>
+    <div style={{margin:"10px 40px",marginTop:"2%",color:"black"}}>
     {console.log(props)}
     <Row style={{height:"440px"}}>
     <Swiper slidesPerView={1} /*autoplay={{

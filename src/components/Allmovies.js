@@ -1,11 +1,9 @@
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import Card from "react-bootstrap/esm/Card";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
-import data from './movies.json';
 import { useState,useEffect } from "react";
 import axios from 'axios';
 
