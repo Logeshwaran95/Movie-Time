@@ -42,7 +42,7 @@ export default function Subscription(props) {
 
   return (
     <div style={{margin:"2%"}}>
-      <h2 style={{textAlign:"center"}}>Subscribe to watch all content on Disney+ Hotstar</h2>
+      <h2 style={{textAlign:"center"}}>Subscribe to watch all content on Movie Time</h2>
       <br></br>
     <Table borderless style={{width:"65%",margin:"auto",background:"#182032",color:"white"}}>
   <thead>

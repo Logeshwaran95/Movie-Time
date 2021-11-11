@@ -50,7 +50,7 @@ export default function LatestTrending() {
   "1024": {
     "slidesPerView": 6,
     //"slidesPerGroup":3,
-    "spaceBetween": 30
+    "spaceBetween": 50
   }
 }} className="mySwiper">
   { data.map((mov) => 

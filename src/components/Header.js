@@ -16,6 +16,19 @@ const Header= () => {
   const [emailaddress, setEmailAddress] = useState("");
   const [passwordd, setPasswordd] = useState("");
   const [login,setLogin] = useState("Login");
+
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 4000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+
   function clearInput() {
     setEmailAddress("");
     setPasswordd("");
@@ -46,19 +59,7 @@ async function UserPost() {
     })
   }
   else
-  await axios.post('http://localhost:4000/user-login', userDetails).then((data)=>{
-    const Toast = Swal.mixin({
-    toast: true,
-    position: 'top-end',
-    showConfirmButton: false,
-    timer: 3000,
-    timerProgressBar: true,
-    didOpen: (toast) => {
-      toast.addEventListener('mouseenter', Swal.stopTimer)
-      toast.addEventListener('mouseleave', Swal.resumeTimer)
-    }
-  })
-  
+  await axios.post('https://movie-time-backend.herokuapp.com/user-login', userDetails).then((data)=>{ 
   Toast.fire({
     icon: 'success',
     title: 'Logged in successfully'
@@ -111,7 +112,10 @@ async function UserPost() {
         <Nav.Link style={{margin:"0px 15px"}} href="/">Home</Nav.Link>
         <Nav.Link href="/AllMovies" style={{margin:"0px 15px"}}>Movies</Nav.Link>
         
-        <NavDropdown title="Genre" id="navbarScrollingDropdown">
+        <NavDropdown title="Genre" id="navbarScrollingDropdown" onClick={() => { Toast.fire({
+    icon: 'info',
+    title: 'Choose a genre to Filter'
+  })}}>
           <NavDropdown.Item href="/movies/genre/action">Action</NavDropdown.Item>
           <NavDropdown.Item href="/movies/genre/horror">Horror</NavDropdown.Item>
           <NavDropdown.Item href="/movies/genre/romance">Romance</NavDropdown.Item>
