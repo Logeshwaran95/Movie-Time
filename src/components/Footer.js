@@ -6,25 +6,40 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Footer() {
     return (
-        <div style={{background:"#0C111B",color:"white",marginTop:"10%"}}>
-  <Container fluid>
-  <Row style={{margin:"0px 30px",padding:"35px 0px"}}>
-    <Col lg={4} sm={6}><p>© 2021 Movie Time. All Rights Reserved. HBO, Home Box Office and all related channel and programming logos are service marks of, and all related programming visuals and elements are the property of, Home Box Office, Inc. All rights reserved.</p></Col>
-    <Col lg={4} sm={6} style={{paddingLeft:"80px"}}>
-        <h5>Connect with us</h5>
-        <ul style={{listStyleType:"none"}}>
-            <li><a href="#" style={{textDecoration:"none"}}>Linkedin</a></li>
-            <li><a href="#" style={{textDecoration:"none"}}>Twitter</a></li>
-            <li><a href="#" style={{textDecoration:"none"}}>Youtube</a></li>
-        </ul>
-        
-    </Col>
-    <Col lg={4} sm={6}>
-        <h5>&nbsp;&nbsp;Movie Time App</h5>
-        <img src="https://www.freepnglogos.com/uploads/app-store-logo-png/apple-app-store-travel-awards-globestamp-7.png" style={{height:"135px"}}/>
-    </Col>
-  </Row>
-</Container>
+        <div style={{ background: "#0C111B", color: "white", marginTop: "10%" }} id="foot">
+            <div class="footer-dark">
+                <footer>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3 item">
+                                <h3>Partnerships</h3>
+                                <ul>
+                                    <li><a href="#">Rotten Tomatoes</a></li>
+                                    <li><a href="#">IMBD</a></li>
+                                    <li><a href="#">World Review</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 col-md-3 item">
+                                <h3>About</h3>
+                                <ul>
+                                    <li><a href="#">Company</a></li>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 item text">
+                                <h3>Movie Time</h3>
+                                <p>Movie Time is a Movie streaming site that shows all latest movies and series. subscribe and watch movie anytime ! anywhere !</p>
+                            </div>
+                            <div class="col item social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-google"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+
+                        </div>
+
+                        <p class="copyright">Copyright © 2021</p>
+                    </div>
+                </footer>
+            </div>
+
         </div>
     );
 }
