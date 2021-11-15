@@ -42,10 +42,10 @@ export default function SingleMovieView() {
         <div style={{margin:"40px 40px",marginTop:"3%"}}>
     <h3>Search results</h3>
     <Row style={{height:"330px"}} className="row">
-    <Swiper slidesPerView={1} /*autoplay={{
+    <Swiper slidesPerView={2} autoplay={{
   "delay": 2500,
   "disableOnInteraction": false
-}} */ spaceBetween={10}  navigation pagination={{
+}}  spaceBetween={13}  navigation pagination={{
   "clickable": true,
   "type":"none"
 }} breakpoints={{
