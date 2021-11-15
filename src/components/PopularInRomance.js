@@ -25,7 +25,7 @@ function PopularInRomance() {
     }
   }, []);
   return (
-    <div style={{ margin: "100px 40px", marginTop: "%" }}>
+    <div style={{ margin: "110px 40px", marginTop: "%" }}>
       <h3>Popular in Romance</h3>
       <Row style={{ height: "330px" }} className="row">
         <Swiper slidesPerView={2} autoplay={{

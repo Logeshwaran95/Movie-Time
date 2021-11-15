@@ -25,7 +25,7 @@ function PopularInCrime() {
     }
   }, []);
   return (
-    <div style={{ margin: "-40px 40px", marginTop: "-60px" }}>
+    <div style={{ margin: "-30px 40px", marginTop: "-60px" }}>
       <h3>Popular in Crime</h3>
       <Row style={{ height: "330px" }} className="row">
         <Swiper slidesPerView={2} autoplay={{

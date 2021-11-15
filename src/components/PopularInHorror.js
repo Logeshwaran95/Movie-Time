@@ -26,7 +26,7 @@ function PopularInAction() {
     }
   }, []);
   return (
-    <div style={{ margin: "80px 40px" }}>
+    <div style={{ margin: "130px 40px" }}>
       <h3>Popular in Horror</h3>
       <Row style={{ height: "330px" }} className="row">
         <Swiper slidesPerView={2} autoplay={{

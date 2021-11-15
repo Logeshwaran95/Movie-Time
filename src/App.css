@@ -38,9 +38,11 @@
 .footer-dark {
   padding: 50px 0;
   color: #f0f9ff;
-  background-color: #0C111B;
+  background-color: #0c111b;
 }
-
+#foot {
+  margin-top: 10%;
+}
 .footer-dark h3 {
   margin-top: 0;
   margin-bottom: 12px;
@@ -153,5 +155,8 @@
   }
   #frame {
     width: 270px;
+  }
+  #foot {
+    margin-top: 30%;
   }
 }

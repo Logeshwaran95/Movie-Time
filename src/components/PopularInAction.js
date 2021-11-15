@@ -32,7 +32,7 @@ function PopularInAction() {
         <Swiper slidesPerView={2} autoplay={{
           "delay": 2500,
           "disableOnInteraction": false
-        }} spaceBetween={10} loop={true} loopFillGroupWithBlank={true} navigation pagination={{
+        }} spaceBetween={13} loop={true} loopFillGroupWithBlank={true} navigation pagination={{
           "clickable": true,
           "type": "none"
         }} breakpoints={{

@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Footer() {
     return (
-        <div style={{ background: "#0C111B", color: "white", marginTop: "10%" }} id="foot">
+        <div style={{ background: "#0C111B", color: "white" }} id="foot">
             <div class="footer-dark">
                 <footer>
                     <div class="container">
@@ -28,8 +28,8 @@ function Footer() {
                                 </ul>
                             </div>
                             <div class="col-md-6 item text">
-                                <h3>Movie Time</h3>
-                                <p>Movie Time is a Movie streaming site that shows all latest movies and series. subscribe and watch movie anytime ! anywhere !</p>
+                                <h3>Movie Mania</h3>
+                                <p>Movie Time is a Movie streaming site that shows all latest movies and series . subscribe and watch movies anytime ! anywhere !</p>
                             </div>
                             <div class="col item social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-google"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
 
