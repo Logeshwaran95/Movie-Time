@@ -10,6 +10,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import axios from "axios";
 import Swal from "sweetalert2";
+import Offcanvas from 'react-bootstrap/esm/Offcanvas';
 
 const Header= () => {
   const [disable, setDisable] = React.useState(false);
@@ -102,17 +103,18 @@ async function UserPost() {
   <Navbar expand="lg" variant='dark' style={{background:'#131A28'}}>
   <Container fluid style={{margin:"0px 80px"}}>
     <Navbar.Brand onClick={brandTrigger}><img src="https://i.postimg.cc/jdsLzLZR/new.png" alt="logo" style={{height:"60px",marginLeft:"-60px",cursor:"pointer"}}/></Navbar.Brand>
-    <Navbar.Toggle aria-controls="navbarScroll" style={{marginRight:"-50px"}}/>
+    <Navbar.Toggle 
+     style={{marginRight:"-50px"}}/>
     <Navbar.Collapse id="navbarScroll">
       <Nav
         className="me-auto my-2 my-lg-0"
-        style={{ maxHeight: '100px'}}
+        style={{ maxHeight: '1000px'}}
         navbarScroll
       >
         <Nav.Link style={{margin:"0px 15px"}} href="/">Home</Nav.Link>
         <Nav.Link href="/AllMovies" style={{margin:"0px 15px"}}>Movies</Nav.Link>
         
-        <NavDropdown title="Genre" id="navbarScrollingDropdown" onClick={() => { Toast.fire({
+        <NavDropdown style={{margin:"0px 15px"}} title="Genre" id="navbarScrollingDropdown" onClick={() => { Toast.fire({
     icon: 'info',
     title: 'Choose a genre to Filter'
   })}}>
@@ -121,8 +123,10 @@ async function UserPost() {
           <NavDropdown.Item href="/movies/genre/romance">Romance</NavDropdown.Item>
           <NavDropdown.Item href="/movies/genre/crime">Crime</NavDropdown.Item>
           <NavDropdown.Item href="/movies/genre/superheroes">Superheroes</NavDropdown.Item>
-          {/* <NavDropdown.Divider /> */}
+         
+
         </NavDropdown>
+        <br></br>
       <Button variant="primary" style={{margin:"0px 15px"}} href="/subscription" id="subs">Subscribe</Button>
       </Nav>
      
@@ -136,7 +140,7 @@ async function UserPost() {
           onKeyPress={handleEnter}
           id="search"
         />
-        {/* <Button variant="primary" onClick={handleSearch} style={{margin:"0px 15px"}}>Search</Button> */}
+   
         <Button style={{margin:"0px 15px",width:"150px"}} onClick={handleShow} id="login" disabled={disable}>{login}</Button>
       </Form>
     </Navbar.Collapse>
@@ -161,12 +165,6 @@ async function UserPost() {
   <Form.Group className="mb-3" controlId="formBasicCheckbox">
     <Form.Check type="checkbox" label="Remember Me" />
   </Form.Group>
-  {/* <Form.Group className="mb-3" controlId="formBasicPassword">
-    <Form.Label>Dont have an account ?</Form.Label>
-    <Button variant="primary" style={{marginLeft:"2rem"}}>
-    Sign Up
-  </Button>
-  </Form.Group> */}
 
 </Form>
         </Modal.Body>
@@ -179,6 +177,9 @@ async function UserPost() {
           </Button>
         </Modal.Footer>
       </Modal>
+    
+      
+    
 </div>
     )
 }

@@ -32,9 +32,9 @@ export default function Subscription(props) {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire(
-          'Subscribtion Request Sent!',
-          'Check Your Email for Payment Details',
-          'success'
+          'Subscribtion Request is Under Development!',
+          'Kindly Check Back Later!',
+          'error'
         )
       }
     })
