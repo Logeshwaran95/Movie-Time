@@ -6,7 +6,7 @@
 
 >  Movie Time is a movie website that displays movies and their details fetched from backend (static data).
 
-### ✨ [Demo](https://logeshwaran95.github.io/Foody-Landing-Page/)
+### ✨ [Demo](https://movie-time-nu.vercel.app/)
 
 ## Author
 
